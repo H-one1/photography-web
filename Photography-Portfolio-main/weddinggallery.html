@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>responsive lightbox gallery tutorial</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing:border-box;
+                transition: all.2s linear;
+            }
+            body{
+                background: #222;
+            }
+           .gallery{
+                display:flex;
+                justify-content:center;
+                flex-wrap: wrap;
+                width: 90%;
+                margin:0 auto;
+            }
+           .gallery a{
+                height: 200px;
+                width: 300px;
+                margin: 20px;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 0 3px 5px #222;
+            }
+           .gallery a img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+           .gallery a img:hover{
+                transform:scale(1.4);
+            }
+            h1{
+                font-size: 50px;
+                margin-top: 10px;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    padding: 1.2rem 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar .logo-wrapper {
+    height: 29px;
+    overflow: hidden;
+
+}
+
+.logo-wrapper a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo-wrapper a strong {
+    font-family: 'Jost', sans-serif;
+    ;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 5px;
+
+}
+
+
+
+.navbar .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar .navbar-links a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+.navbar .navbar-links a:hover {
+    color: rgb(255, 255, 255);
+
+}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo-wrapper">
+                    
+                    <a class="logo" <strong>KITTU PHOTOGRAPHY</strong> </a>
+                </div>
+    
+                <ul class="navbar-links">
+                    <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">WORKS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+    
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>wedding photoshoot</h1>
+        <button class="summa">Book Now</button>
+        <br>
+        <br>
+        <div class="gallery lg-scrollable">
+            
+            <a href="c:\Users\admin\Downloads\wedding 1.webp">
+                <img src="c:\Users\admin\Downloads\wedding 1.webp" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 2.webp">
+                <img src="c:\Users\admin\Downloads\wedding 2.webp" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 3.jpg">
+                <img src="c:\Users\admin\Downloads\wedding 3.jpg" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 4.jpg">
+                <img src="c:\Users\admin\Downloads\wedding 4.jpg" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 5.jpg">
+                <img src="c:\Users\admin\Downloads\wedding 5.jpg" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 6.webp">
+                <img src="c:\Users\admin\Downloads\wedding 6.webp" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 7.webp">
+                <img src="c:\Users\admin\Downloads\wedding 7.webp" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 8.jpg">
+                <img src="c:\Users\admin\Downloads\wedding 8.jpg" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 9.webp">
+                <img src="c:\Users\admin\Downloads\wedding 9.webp" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\wedding 10.jpg">
+                <img src="c:\Users\admin\Downloads\wedding 10.jpg" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\Snapinsta.app_263489112_1103074260462701_2641895981905679293_n_1080.jpg">
+                <img src="c:\Users\admin\Downloads\Snapinsta.app_263489112_1103074260462701_2641895981905679293_n_1080.jpg" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\Snapinsta.app_264234808_420923539580950_8904642441118498106_n_1080.jpg">
+                <img src="c:\Users\admin\Downloads\Snapinsta.app_264234808_420923539580950_8904642441118498106_n_1080.jpg" alt="">
+            </a>
+            <a href="c:\Users\admin\Downloads\Snapinsta.app_258822571_650437955957283_177394639882165099_n_1080.jpg">
+                <img src="c:\Users\admin\Downloads\Snapinsta.app_258822571_650437955957283_177394639882165099_n_1080.jpg" alt="">
+            </a>
+        </a>
+        <a href="c:\Users\admin\Downloads\Snapinsta.app_243772145_284423789936727_3311738640622353560_n_1080.jpg">
+            <img src="c:\Users\admin\Downloads\Snapinsta.app_243772145_284423789936727_3311738640622353560_n_1080.jpg" alt="">
+        </a>
+        <a href="c:\Users\admin\Downloads\Snapinsta.app_369632720_17983438637363983_2481039997036209450_n_1080.jpg">
+            <img src="c:\Users\admin\Downloads\Snapinsta.app_369632720_17983438637363983_2481039997036209450_n_1080.jpg" alt="">
+        </a>
+      
+          
+          
+          
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+        <script>
+            lightGallery(document.querySelector('.gallery'), {
+                scrollable: true
+            });
+        </script>
+    </body>
+</html>

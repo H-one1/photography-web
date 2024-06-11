@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Photography Services</title>
+    <style>
+          form{
+            margin: 15px auto; /* add auto to margin to center the form */
+  width: 500px;
+  font-size: 16px;
+    }
+    form h1{
+      text-align: center;
+    }
+    form label{
+      display: block;
+      margin-bottom: 5px;
+    }
+    form input, form textarea{
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    form button{
+      background: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      margin-top: 5px;
+      border: none;
+      cursor: pointer;
+      margin: 15px auto; /* add auto to margin to center the form */
+      width: 500px;
+    }
+    form button:hover{
+      background: green;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #aaa;
+        }
+
+        .contact-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #aaa;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #666;
+        }
+
+        .map-container {
+            margin: 40px 0;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        .footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .footer .social-icons {
+            margin-top: 10px;
+        }
+
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 24px;
+        }
+
+        .footer .social-icons a:hover {
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form input,
+            .contact-form textarea {
+                width: 90%;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+
+            .navbar li {
+                margin: 10px 0;
+            }
+
+            .navbar a {
+                padding: 10px 20px;
+            }
+            
+        }
+    </style>
+    <!-- Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo"><strong>KITTU PHOTOGRAPHY</strong></div>
+    <ul>
+        <li><a href="home.html"><strong>HOME</strong></a></li>
+        <li><a href="#about"><strong>ABOUT</strong></a></li>
+        <li><a href="#services"><strong>SERVICES</strong></a></li>
+        <li><a href="#works"><strong>WORKS</strong></a></li>
+       
+        <li><a href="#contact"><strong>CONTACT</strong></a></li>
+    </ul>
+</div>
+
+<form>
+    <h1>Contact us</h1>
+    <label for="">Name</label>
+    <input type="text" class="name">
+
+    <label for="">Email</label>
+    <input type="text" class="email">
+
+    <label for="">Phone Number</label>
+    <input type="text" class="country">
+    <label for="">Address</label>
+    <input type="text" class="country">
+    <label for="">Message</label>
+    <textarea class="message"></textarea>
+    <button type="button" onclick="sendwhatsapp();">Send </button>
+  </form>
+
+  <script>
+    function sendwhatsapp(){
+     var phonenumber = "+91 9345640626";
+
+     var name = document.querySelector(".name").value;
+     var email = document.querySelector(".email").value;
+     var Phno = document.querySelector(".Phno").value;
+     var address = document.querySelector(".address").value;
+     var message = document.querySelector(".message").value;
+
+     var url = "https://wa.me/" + phonenumber + "?text="
+     +"Name : "+name+"%0a"
+     +"Email : "+email+"%0a"
+     +"Phone Number: "+phno+"%0a"
+     +"Address: "+address+"%0a"
+     +"Message : "+message
+     +"%0a%0a"
+     +"";
+
+     window.open(url, '_blank').focus();
+   }
+  </script>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450929!2d78.003333!3d9.366667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c9a6a6a6a6a7%3A0x3b00c9a6a6a6a6a6!2sSattur%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sau!4v1581074318869!5m2!1sen!2sau"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0">
+        </iframe>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Kittu Photography</p>
+    <p>Address: Kittu Photography, Vembakottai Road, Sattur - 626203</p>
+    <p>Phone: 9345640626</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+</div>
+
+</body>
+</html>
